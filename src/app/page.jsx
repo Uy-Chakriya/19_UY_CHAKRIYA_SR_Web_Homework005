@@ -20,12 +20,9 @@ export default function Home(items) {
           <div className="text-lg font-bold tracking-wide">짝리야 씨</div>
         </div>
 
-        {/* Search */}
         <div className="bg-gray-800 px-4 py-2 rounded-md text-gray-300 hover:bg-gray-700 transition">
           Search By Items Name
         </div>
-
-        {/* Profile */}
       </nav>
     </div>
   );
