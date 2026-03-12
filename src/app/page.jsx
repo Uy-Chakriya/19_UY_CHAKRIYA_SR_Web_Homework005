@@ -11,7 +11,7 @@ export default function Home(items) {
             <Image
               className="object-cover rounded-full"
               src={hello}
-              alt="hello image"
+              alt="profile"
               width={50}
               height={50}
             />

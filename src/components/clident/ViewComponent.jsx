@@ -1,12 +1,9 @@
 "use client";
+import { useState } from "react";
 import { items } from "@/app/data/items";
 import Image from "next/image";
-import ProductCard from "../server/ProductCardComponent";
-import MapModal from "../server/MapModalComponent";
 
 export default function ViewComponent() {
-  const [selectedItem, setSelectedItem] = useState(null);
-
   return (
     <div>
       <div className="w-full">
@@ -128,20 +125,6 @@ export default function ViewComponent() {
             </div>
           );
         })}
-      </div>
-
-      <div className="p-10">
-        <div className="grid grid-cols-3 gap-4">
-          {items.map((item) => (
-            <ProductCard
-              key={item.id}
-              item={item}
-              onView={(data) => setSelectedItem(data)}
-            />
-          ))}
-        </div>
-
-        <MapModal item={selectedItem} onClose={() => setSelectedItem(null)} />
       </div>
     </div>
   );
