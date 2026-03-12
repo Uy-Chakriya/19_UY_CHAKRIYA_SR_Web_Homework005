@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       >
         {children}
 
-        <div className="flex flex-row gap-6 ">
+        <div className="flex flex-row gap-6 w-full ">
           <SidebarComponent />
           <ViewComponent />
         </div>
